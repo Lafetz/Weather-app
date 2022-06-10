@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+* {
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  --main-color: white;
+  font-size: 62.5%;
+  color: var(--main-color);
+  --error: #ef4444;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background-image: url("sky.png");
+
+  background-size: cover;
+}
+#container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+form {
+  font-size: 1.6rem;
+  width: 30%;
+  min-width: 370px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  color: black;
+  margin: 0px;
+  font: optional;
+  font-size: 2rem;
+  width: 70%;
+  outline-style: none;
+  border-style: none;
+  border-radius: 5px;
+  padding: 12px 5px;
+  height: 2.5rem;
+}
+
+input:focus {
+  border: 2px solid #4f46e5;
+}
+svg {
+  display: block;
+  color: aliceblue;
+  height: 100%;
+}
+
+button {
+  margin-left: 5px;
+
+  width: fit-content;
+  border-style: none;
+  border: none;
+  background-color: Transparent;
+}
+button:hover {
+  transform: scale(1.5);
+}
+
+#weather {
+  width: 30%;
+  min-width: 370px;
+  height: 450px;
+  border: 1px solid var(--main-color);
+  display: grid;
+  grid-template-rows: 2fr 3fr 1fr 7fr;
+  padding: 0px 25px;
+}
+.up {
+  display: flex;
+  justify-content: center;
+}
+#location {
+  align-self: center;
+  font-size: 4rem;
+}
+#temp {
+  font-size: 5rem;
+  text-align: center;
+}
+#cloudData {
+  font-size: 3.5rem;
+  margin: auto;
+}
+.low {
+  width: fit-content;
+  min-width: 300px;
+  margin: auto;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 30px;
+  grid-template-columns: 3fr 3fr;
+  font-size: 3rem;
+}
+.error {
+  font-size: 4rem;
+  color: #ef4444;
+}

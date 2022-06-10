@@ -1,3 +1,5 @@
+/* eslint-disable semi */
+/* eslint-disable comma-dangle */
 const path = require("path");
 
 module.exports = {

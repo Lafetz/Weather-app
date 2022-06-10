@@ -13,5 +13,6 @@ module.exports = {
     "comma-dangle": "off",
     semi: "off",
     "no-use-before-define": ["error", { variables: false }],
+    "no-unused-vars": "off",
   },
 };
