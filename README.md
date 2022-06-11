@@ -1,3 +1,3 @@
 # Weather-app
-Built with HTML,CSS and JS <br>
+Created  with HTML,CSS and JS
 ### [demo](https://lafetz.github.io/Weather-app/)
