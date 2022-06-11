@@ -13,13 +13,14 @@ const displayPrimary = function (city, country, imgSrc, cloudData, temp) {
 };
 const displayImg = function (imgSrc) {
   const up = document.querySelector(".up");
-  const imgExist = document.querySelector("img");
+  const imgExist = document.querySelector(".cloudIcon");
 
   if (imgExist !== null) {
     imgExist.remove();
   }
 
   const img = document.createElement("img");
+  img.classList.add("cloudIcon");
   img.src = `http://openweathermap.org/img/wn/${imgSrc}@2x.png`;
   up.append(img);
 };
@@ -39,7 +40,7 @@ const displaySecondary = function (feels, wind, humidity, pressure) {
   press.textContent = `pessure:${pressure}hPa`;
 };
 const cityNot = function () {
-  const imgExist = document.querySelector("img");
+  const imgExist = document.querySelector(".cloudIcon");
 
   if (imgExist !== null) {
     imgExist.remove();

@@ -21,7 +21,7 @@ body {
 }
 #container {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@ input {
   margin: 0px;
   font: optional;
   font-size: 2rem;
-  width: 70%;
+  width: 80%;
   outline-style: none;
   border-style: none;
   border-radius: 5px;
@@ -92,10 +92,12 @@ button:hover {
 #temp {
   font-size: 6rem;
   text-align: center;
+  margin-left: -5%;
 }
 #cloudData {
   font-size: 3.5rem;
-  margin: auto;
+  text-align: center;
+  margin-left: -5%;
 }
 .low {
   width: fit-content;
@@ -110,4 +112,13 @@ button:hover {
 .error {
   font-size: 4rem;
   color: #ef4444;
+}
+#icon {
+  height: 5rem;
+  margin-right: 5px;
+}
+h1 {
+  margin-top: -5%;
+  margin-left: -2%;
+  font-size: 6rem;
 }
